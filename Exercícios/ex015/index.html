@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+        div.quadrado {
+            border: 2px solid black;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            display: inline-block; /* configuração que transforma o bloco em inline e faz com que todos fiquem na mesma linha*/
+        }
+
+        div#q1 {
+            background-color: aquamarine;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern001.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+
+    <br>
+    <a href="fundo002.html">vai para fundo 002</a>
+    <br>
+    <a href="fundo003.html">vai para fundo 003</a>
+    <br>
+    <a href="fundo004.html">vai para fundo 004</a>
+    <br>
+    <a href="fundo005.html">vai para fundo 005</a>
+    <br>
+    <a href="fundo006.html">vai para fundo 006</a>
+</body>
+</html>
