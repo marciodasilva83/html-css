@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d012</title>
+    <!-- baixar a imagem de fundo do bob esponja com as casas e colocar os personagens na frente de sua casa -->
+
+    <style>
+        #conteudo {
+        background-color: rgba(255, 255, 255, 0.8);
+        background-image: url(imagens/cenario.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 20px ; 
+        max-width: 200px;
+        text-align: center;
+        height: 570px;
+        max-width: 100%;
+        font-size: larger; 
+        font-weight: bold;
+        font-family: "Arial", sans-serif;
+        }
+
+        .bob:after {
+        content: "";
+        background: url('imagens/bob.png') center center no-repeat;
+        background-size: 100px;
+        position: absolute;
+        top: 480px;
+        left: 630px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .siriqueijo:after {
+        content: "";
+        background: url('imagens/siriqueijo.png') center center no-repeat;
+        background-size: 110px;
+        position: absolute;
+        top: 380px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+
+        .patrick:after {
+        content: "";
+        background: url('imagens/patrick.png') center center no-repeat; 
+        background-size: 100px;
+        position: absolute;
+        top: 430px;
+        left: -700px;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Desafio Bob Esponja</h1>
+    <div id="conteudo"></div>
+    <div class="bob"></div>
+    <div class="siriqueijo"></div>
+    <div class="patrick"></div>
+</body>
+</html>
