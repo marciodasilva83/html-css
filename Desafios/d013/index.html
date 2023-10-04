@@ -5,34 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 013</title>
     <Style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    table {
-        border-collapse: collapse;
-        width: 600px;
-    }
+        table {
+            width: 600px;
+            border-collapse: collapse; 
+            position: relative;
+            text-align: center;          
+        }
+        
+        td, th {
+            border: 1.5px solid black;
+            padding: 10px;
+        }
 
-    td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: center;
-    }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(11, 104, 8);
+            color: white;
+        }
+
+        thead, tfoot {
+            background-color: #1ccc1c;
+            color: black;
+        }
+
 </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
-    <h2>Filmes Favoritos</h2>
 
     <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
         <tr>
-            <td>Grupos</td>
-            <td>Nomes</td>            
-            <td colspan="3">Filmes</td>            
+            <td><strong>Grupos</strong></td>
+            <td><strong>Nomes</strong></td>            
+            <td colspan="3"><strong>Filmes</strong></td>            
         </tr>
+        </thead>
         <tr>
-            <td rowspan="3">Mulheres</td>
+            <td rowspan="3"><strong>Mulheres</strong></td>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -51,7 +68,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3">Homens</td>
+            <td rowspan="3"><strong>Homens</strong></td>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -69,10 +86,12 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <tfoot>
         <tr>
-            <td colspan="4">Total</td>
-            <td>1000</td>            
+            <td colspan="4"><strong>Total</strong></td>
+            <td><strong>1000</strong></td>            
         </tr>
+        </tfoot>
     </table>
 </body>
 </html>
