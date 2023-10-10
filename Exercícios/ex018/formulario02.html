@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fda172;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgb(210, 210, 254);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 12px 12px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <title>Ficha de inscrição</title>
+</head>
+<body>
+
+    <h1>Trabalhe conosco</h1>
+
+    <form action="processar.php" method="post">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="sexo">Sexo</label>
+        <input type="text" id="sexo" name="sexo" placeholder="Seu sexo" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Seu bairro e cidade" required>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cfp" name="cfp" placeholder="Seu CPF" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido (ex: 123.456.789-01)">
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Sua data de nascimento" required>
+
+        <label for="comentarios">Comentários:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Seu comentário"></textarea>
+
+        <label for="curriculo">Carregar currículo (PDF ou Word):</label>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf, .doc, .docx" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <a href="index.html">Volte para o início</a>
+</body>
+</html>
